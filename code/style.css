@@ -2,3 +2,92 @@ html {
   background: #f2f1f4;
   color: #19171c;
 }
+
+.text {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 30px;
+}
+
+.articles {
+  text-align: center;
+  margin-top: 100px;
+
+}
+
+.grid-item {
+  width: calc(33% - 32px);
+  max-width: 33%;
+  display: inline-block;
+  overflow: hidden;
+  height: 320px;
+  text-align: left;
+  margin: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.grid-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 10px 10px 32px -8px rgba(0,0,0,0.75);
+}
+
+.grid-item > img {
+  height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+
+}
+
+.grid-item-title {
+  position: relative;
+  left: 32px;
+  bottom: 128px;
+  width: 80%;
+  max-width: 80%;
+}
+
+.grid-item-title > span {
+  background-color: #FFB6C1;
+  font-size: 200%;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 900px) {
+  .grid-item {
+    width: calc(49% - 32px);
+    max-width: 49%;
+    margin: 16px;
+  }
+
+}
+@media (max-width: 600px) {
+  .grid-item {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+}
+.nyheter {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4040a1;
+  color: white;
+  font-size: 280%;
+  padding: 10px;
+  box-shadow: 5px 6px #C8C8C8;
+  font-family: 'Merriweather', serif;
+  max-width: 480px;
+
+}
+
+footer {
+
+}
